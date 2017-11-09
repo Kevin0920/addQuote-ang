@@ -1,0 +1,5 @@
+<div class="container">
+  <!-- function of "=" of left side from child component and right side from parent component.ts -->
+  <app-quote-create (createNewQuote)="createNew($event)"></app-quote-create>
+  <app-quote-list [quoteListEvent]="newQ"></app-quote-list>
+</div>
